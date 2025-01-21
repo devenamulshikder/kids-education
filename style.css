@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif;
+}
+#header-sec {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header-sec .nav-header .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.logo-img {
+  width: 50px;
+}
+.school {
+  color: rgb(17, 17, 17);
+  font-size: 32px;
+  font-weight: 700;
+}
+.nav-link a {
+  text-decoration: none;
+  margin-right: 32px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-btn {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 32px;
+  background: rgb(254, 163, 1);
+}
+.nav-btn:hover {
+  scale: 1.1;
+  transition-duration: 600ms;
+  color: rgb(254, 163, 1);
+  background: rgba(254, 161, 1, 0.275);
+}
+.more-icon {
+  display: none;
+}
+
+/* media query  */
+@media screen and (max-width: 576px) {
+  #header-sec {
+    padding: 5px;
+  }
+  .logo-img{
+    width: 20px;
+  }
+  .school {
+    display: none;
+  }
+  .nav-link a {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .more-icon {
+    display: flex;
+  }
+}
